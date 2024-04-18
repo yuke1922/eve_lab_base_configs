@@ -1,0 +1,19 @@
+
+conf t
+service tcp-keepalives-in
+service tcp-keepalives-out
+service timestamps debug uptime
+service timestamps log datetime msec
+service password-encryption
+username admin priv 15 sec 0 P@ssw0rd!
+ip domain-name eve.local
+hostname Rx
+no logging console
+line vty 0 15
+transport input ssh
+transport preferred none
+exit
+line con 0
+transport preferred none
+exit
+crypto key gen rsa mod 2048
