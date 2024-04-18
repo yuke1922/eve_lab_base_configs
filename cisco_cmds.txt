@@ -16,4 +16,4 @@ exit
 line con 0
 transport preferred none
 exit
-crypto key gen rsa mod 2048
+crypto key gen rsa mod 1024
