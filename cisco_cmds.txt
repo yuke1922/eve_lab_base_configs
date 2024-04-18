@@ -10,6 +10,7 @@ ip domain-name eve.local
 hostname Rx
 no logging console
 line vty 0 15
+login local
 transport input ssh
 transport preferred none
 exit
