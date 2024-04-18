@@ -5,6 +5,10 @@ service tcp-keepalives-out
 service timestamps debug uptime
 service timestamps log datetime msec
 service password-encryption
+vrf definition oobm
+address-family ipv4 unicast
+exit
+
 username admin priv 15 sec 0 P@ssw0rd!
 ip domain-name eve.local
 hostname Rx
